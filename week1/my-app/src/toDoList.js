@@ -1,8 +1,8 @@
-export default function App(props) {
+function ToDo() {
     return ( 
     <div className="todoapp stack-large">
       <h1>To Do List</h1>
-      <ul role="list" className="todo-list stack-large stack exception" aria-labelledby="list-heading">
+      <ul className="todo-list stack-large stack exception" aria-labelledby="list-heading">
         <li className="todo stack-small">
           <div className="checkItem">
             <input id="todo-0" type="checkbox" defaultChecked={true} />
@@ -25,3 +25,5 @@ export default function App(props) {
     </div>
     );
   }
+
+export default ToDo;
