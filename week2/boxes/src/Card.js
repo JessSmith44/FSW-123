@@ -1,4 +1,3 @@
-import React from "react"
 function Card(props){
   return(
     <div className="container" style={{backgroundColor: props.bgcolor, width: props.width}}>
