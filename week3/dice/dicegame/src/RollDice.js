@@ -4,12 +4,15 @@ import './RollDice.css';
 
 const RollDice = ({sides}) => {
     const [state, setState] = useState({
-        die1: "one",
-        die2: "two",
+        // die1: "one",
+        // die2: "one",
         rolling: false,
-        totalScore: 4,
+        totalScore: "",
     });
-    const {die1, die2, rolling, totalScore} = state;
+    const [die1, newDie1] = useState('one');
+    const [die2, newDie2] = useState('one');
+
+    const { rolling, totalScore} = state;
     
     const roll = () => {
         const newDie1 = sides[Math.floor(Math.random() * sides.length)];

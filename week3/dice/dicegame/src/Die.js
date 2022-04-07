@@ -1,8 +1,8 @@
 import './Die.css';
 
-const Die = ({face, rolling}) => {
+const Die = ({face}) => {
     return (
-        <i className={`fas fa-dice-${face} ${rolling && "shaking"} fa-5x`} />
+        <i className={`die fas fa-dice-${face} ${"shaking"} fa-5x`} />
     )
 };
 
