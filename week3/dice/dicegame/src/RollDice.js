@@ -4,8 +4,6 @@ import './RollDice.css';
 
 const RollDice = ({sides}) => {
     const [state, setState] = useState({
-        // die1: "one",
-        // die2: "one",
         rolling: false,
         totalScore: "",
     });
