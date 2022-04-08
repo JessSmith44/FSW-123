@@ -1,4 +1,4 @@
-// import { v4 as uuid } from "uuid";
+
 const { v4: uuidv4 } = require('uuid');
 export const todos = [
     { 
@@ -18,6 +18,21 @@ export const todos = [
     },
     { 
     text: "do homework", 
+    id: uuidv4(),
+    isComplete: false
+    },
+    {
+    text: "water plants", 
+    id: uuidv4(),
+    isComplete: false
+    },
+    {
+    text: "dont sing cocomelon", 
+    id: uuidv4(),
+    isComplete: false
+    },
+    {
+    text: "get better headphones", 
     id: uuidv4(),
     isComplete: false
     }
