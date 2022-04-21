@@ -1,8 +1,9 @@
-import React, { Component, useState } from "react";
+import React, { useState } from "react";
 
 function TodoForm({addTodo}){
   const initalInputs = {text: ""}
-  const [inputs, setInputs] = useState(initalInputs)
+  const [inputs, setInputs] = useState(initalInputs);
+  const [errorMessage, setErrorMessage] = useState('')
 
   const handleChange = (e) => {
     var {value, name} = e.target
@@ -12,16 +13,23 @@ function TodoForm({addTodo}){
       [name]: value
     })
   }
-  const handleSubmit = (e) =>{
+  const handleSubmit = (e) => {
     e.preventDefault();
-    addTodo(inputs.text);
-
+    console.log(inputs)
+    if(inputs.text === ''){
+      let msg = 'Oh no! To do is empty!';
+      setErrorMessage(msg)
+      return;
+    } else {
+      addTodo(inputs.text);
+      setInputs(initalInputs);
+    }
     // console.log(addTodo)
   }
 
   return(
     <form>
-      <input type={"text"} name={"text"} onChange={handleChange} required="required"/>
+      <input type={"text"} name={"text"} value={inputs.text} onChange={handleChange} required="required"/> {errorMessage}
       <button type="submit" onClick={handleSubmit}>Add</button>
     </form>
   )

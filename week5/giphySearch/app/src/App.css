@@ -1,0 +1,44 @@
+body{
+  background-color: rgb(99, 84, 84);
+}
+.gifs{
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.gif{
+  padding: 0 2px;
+}
+.loader{
+  color: blue;
+}
+.close{
+  margin-left: 20px;
+  border-radius: 15%;
+  background-color: rgb(238, 229, 201);
+}
+.form-control{
+  display: inline;
+  width: 300px;
+  margin-left: 500px;
+  background-color: antiquewhite;
+}
+.search-btn{
+  display: inline;
+  border-radius: 15%;
+  background-color: antiquewhite;
+  font-weight: 700;
+  color: rgb(43, 41, 41);
+}
+@media(max-width: 1054px){
+  .form-control{
+    margin-left: 350px;
+  }
+}
+@media (max-width: 790px){
+  .form-control{
+    margin-left: 90px;
+  }
+}
