@@ -1,3 +1,12 @@
+    For my capstone project I decided to go with a blog style app. I feel like it is a project that you can add allot of personality too while keeping things simple and elegant. I have 10 components that all have a specific functionality, Home, About and post are the linked pages set up with the navbar. My footer and header component that can be reused across future projects. A missing page to display if a post/page is not found. New post component to add a new post on to the blog, post to display the details for each post, postPage to display the specific post clicked on for a single post read. Feed post to display all posts available. I have been through many errors on this project. Starting with an error that caused me to need to restart the entire project, upon restarting the project I got the same error however for a different reason. Once I resolved that, it was a simple matter of correcting small syntax errors such as an extra s where it was not needed! And making sure a function that was being passed as a prop was in fact being used. All in all this was an eye opening project to do, as it really tested all my abilities to debug and fix issues that were present, some of which I did require an extra pair of eyes for(thank you academic consultants!). I had allot of fun making this application, despite the stress of resolving strange errors. 
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

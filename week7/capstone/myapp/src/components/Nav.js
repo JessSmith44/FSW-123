@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
 
-const Nav = ( { search, setSearch } ) => {
+const Nav = ( { search, setSearch, handleChange } ) => {
     return(
         <nav className="Nav">
-            <form className="searchForm" onSubmit={(e) => e.preventDefault}>
+            <form className="searchForm" onChange={handleChange}>
                 <input
                     id='search'
                     type='text'
